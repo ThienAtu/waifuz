@@ -9,11 +9,12 @@ frontend:
   phases:
     build:
       commands:
+        - npm install @mui/material @emotion/react @emotion/styled
         - npm run build
   artifacts:
     baseDirectory: dist
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
       - .npm/**/*
